@@ -57,12 +57,12 @@ class Linked_List:
         if self.head is None:
             print("Element Not Present In the List.....")
 
-        if self.head.data == after_which:
+        elif self.head.data == after_which:
             new_node.next = self.head.next
             self.head.next = new_node
             flag = True
 
-        if self.tail.data == after_which:
+        elif self.tail.data == after_which:
             self.tail.next = new_node;
             self.tail = new_node
             new_node.next = None
@@ -98,7 +98,7 @@ class Linked_List:
             self.tail.next = None
             return
 
-        if self.tail.next is None:
+        elif self.tail.next is None:
             self.tail.next = new_node
             self.tail = new_node
             new_node.next = None
@@ -158,7 +158,7 @@ class Linked_List:
             print("Emtpy List ..  there should be atleast one element to delete...")
             return
 
-        if self.head.data == value:
+        elif self.head.data == value:
             self.delete_first()
             flag = True
 
