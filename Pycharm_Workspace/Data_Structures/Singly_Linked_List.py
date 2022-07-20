@@ -201,6 +201,23 @@ class Linked_List:
 
         print("Head = ", self.head.data, "  ", "Tail = ", self.tail.data, "  ", "Size = ", self.size, '\n')
 
+    ## Below one is using extra space    so below one is optional
+    def print_reverse(self):
+        if self.head is None:
+            print("No Elements To Print...")
+            return
+        print("Reversed Linked List Elements  (No Change to Original Data) : ",end=' ')
+        list_elements = []
+        temp = self.head
+        while temp:
+            list_elements.append(temp.data)
+            temp = temp.next
+        for i in list_elements[::-1]:
+            print(i,end=' --> ')
+
+
+
+
     ### Initializing
 
 
@@ -216,3 +233,4 @@ ll.delete("21031F0026")
 ll.insert_After("21031F0025","21031F0026")
 ll.delete_first()
 ll.delete_last()
+ll.print_reverse()
