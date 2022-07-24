@@ -54,8 +54,13 @@ class Stack_Linked_List:
 
 
 sll = Stack_Linked_List()
-for i in range(1,11):
+
+elements = [2, 7, 9, 3, 5, 8, 1, 6, 25, 38, 78, 99, 11, 15, 65, 88]
+for i in elements:
     sll.push_sul(i)
+
+# for i in range(1,11):
+#     sll.push_sul(i)
 sll.print_sul()
 sll.pop_sul()
 sll.print_sul()

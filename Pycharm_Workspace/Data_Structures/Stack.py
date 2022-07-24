@@ -43,7 +43,10 @@ class stack:
         else:
             print("No Elements To Print...")
             return
+
+
 st = stack()
+
 for i in range(1,11):
     st.push_s(i)
 st.print_s()
